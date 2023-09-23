@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Customized T-Shirt Order Form</title>
+    <script src="index.js"></script>
+</head>
+
+
+<body>
+    <form onsubmit="return validateForm();" action="javascript:void(0);">
+        <h1><u>Customized T-Shirt Order Form</u></h1>
+
+
+        <figure>
+            <img src="tshirt.png" alt="Trulli" style="width:15%">
+            <figcaption>Sample T-Shirt</figcaption>
+        </figure>
+        <details>
+            <summary>Details</summary>
+            <p>Premium Quantity</p>
+            <p>100% Cotton</p>
+            <p>Low Price</p>
+        </details>
+        <br>
+        <div>
+            <label for="tagline">Tagline:</label>
+            <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline here" />
+        </div>
+        <br>
+        <div>
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+                <option value="2xlarge">2X-Large</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" />
+        </div>
+        <br>
+        <div>
+            <label for="delivery_date">Delivery Date:</label>
+            <input type="date" id="delivery_date" name="delivery_date" />
+        </div>
+        <br>
+        <fieldset>
+            <legend>
+                Address
+            </legend>
+            <label for="Society">Enter your Society Name</label>
+            <input type="text" name="Society" id="Society"><br><br>
+            <label for="Lane">Enter Lane</label>
+            <input type="text" name="Lane" id="Lane"><br><br>
+            <label for="City">Enter City</label>
+            <input type="text" name="City" id="City"><br><br>
+            <label for="State">Enter State</label>
+            <input type="text" name="State" id="State"><br><br>
+            <label for="Pincode">Enter Pincode</label>
+            <input type="number" name="Pincode" id="Pincode"><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>
+                Contact Info
+            </legend>
+            <label for="Email">Enter your Email Address</label>
+            <input type="email" name="Email" id="Email"><br><br>
+            <label for="Phone">Enter Phone Number</label>
+            <input type="number" name="Phone" id="Phone"><br><br>
+        </fieldset><br><br>
+        <input type="submit" value="Submit" class="btn btn-primary" />
+
+
+    </form>
+</body>
+
+
+</html>
